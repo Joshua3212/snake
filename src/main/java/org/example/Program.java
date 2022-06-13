@@ -36,6 +36,9 @@ public class Program {
 
         Game.screens().add(new IngameScreen());
 
+        //Player.init();
+        SnakeLogic.init();
+
         Game.start();
     }
 }
