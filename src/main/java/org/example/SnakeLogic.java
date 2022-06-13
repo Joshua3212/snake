@@ -9,10 +9,13 @@ public class SnakeLogic {
     public SnakeLogic() {
     }
 
+
+    // initialize the game
     public static void init() {
         //set a camera
         Camera camera = new PositionLockCamera(Player.instance()); // locked to the player -> moves with the player
         camera.setClampToMap(true);
+
         Game.world().setCamera(camera);
 
 

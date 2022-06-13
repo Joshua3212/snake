@@ -145,3 +145,13 @@ Caused by: jakarta.xml.bind.UnmarshalException: unexpected element (uri:"", loca
 	at de.gurkenlabs.litiengine.resources.Maps.load(Maps.java:109)
 	... 13 more
 
+Jun 13, 2022 10:41:13 PM de.gurkenlabs.litiengine.environment.MapObjectLoader loadCustomMapObjectProperties
+WARNING: entity #19: value "10" for custom property velocity could not be set.
+Jun 13, 2022 10:42:08 PM de.gurkenlabs.litiengine.environment.MapObjectLoader loadCustomMapObjectProperties
+WARNING: entity #19: value "10" for custom property velocity could not be set.
+Jun 13, 2022 10:43:45 PM de.gurkenlabs.litiengine.environment.MapObjectLoader loadCustomMapObjectProperties
+WARNING: entity #19: value "10" for custom property velocity could not be set.
+Jun 13, 2022 10:43:53 PM de.gurkenlabs.litiengine.environment.MapObjectLoader loadCustomMapObjectProperties
+WARNING: entity #19: value "10" for custom property velocity could not be set.
+Jun 13, 2022 10:44:24 PM de.gurkenlabs.litiengine.environment.MapObjectLoader loadCustomMapObjectProperties
+WARNING: entity #19: value "10" for custom property velocity could not be set.
