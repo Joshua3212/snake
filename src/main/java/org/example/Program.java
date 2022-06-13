@@ -2,6 +2,7 @@ package org.example;
 
 import de.gurkenlabs.litiengine.Game;
 import de.gurkenlabs.litiengine.GameListener;
+import org.example.screens.gameScreen;
 
 public class Program {
     public static void main(String[] args) {
@@ -17,6 +18,7 @@ public class Program {
                 System.out.println("-- Game started");
             }
 
+
             @Override
             public void terminated() {
                 System.out.println("-- Game stopped");
@@ -24,7 +26,6 @@ public class Program {
 
         });
 
-
-        Game.graphics().
+        Game.screens().add(new gameScreen());
     }
 }
