@@ -1,7 +1,6 @@
 package org.example;
 
 import de.gurkenlabs.litiengine.Game;
-import de.gurkenlabs.litiengine.GameListener;
 import de.gurkenlabs.litiengine.resources.Resources;
 import org.example.screens.IngameScreen;
 
@@ -14,30 +13,34 @@ public class Program {
         Game.init(args);
 
 
-        Game.addGameListener(new GameListener() {
-            @Override
-            public void started() {
-                System.out.println("-- Game started");
-            }
+        //
+        // Game.addGameListener(new GameListener() {
+        //    @Override
+        //    public void started() {
+        //        System.out.println("-- Game started");
+        //    }
+//
+//
+        //    @Override
+        //    public void terminated() {
+        //        System.out.println("-- Game stopped");
+        //    }
+//
+        //});
 
-
-            @Override
-            public void terminated() {
-                System.out.println("-- Game stopped");
-            }
-
-        });
-
-        // load resources
-        Resources.load("game.litidata");
-        Game.world().loadEnvironment("level1");
 
         Game.graphics().setBaseRenderScale(4f);
+        // load resources
+        Resources.load("game.litidata");
+
+
+        PlayerInput.init();
+        SnakeLogic.init();
 
         Game.screens().add(new IngameScreen());
 
-        //Player.init();
-        SnakeLogic.init();
+        // load environment
+        Game.world().loadEnvironment("level1");
 
         Game.start();
     }

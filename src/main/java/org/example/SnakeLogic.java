@@ -19,6 +19,8 @@ public class SnakeLogic {
         Game.world().setCamera(camera);
 
 
+        Game.world().setGravity(120);
+
         Game.world().onLoaded(e -> {
             Spawnpoint enter = e.getSpawnpoint("enter");
 

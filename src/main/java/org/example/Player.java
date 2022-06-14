@@ -15,7 +15,7 @@ public class Player extends Creature implements IUpdateable {
     private static Player instance;
 
     private Player() {
-        super("player");
+        super("gurknukem");
     }
 
     public static Player instance() {
